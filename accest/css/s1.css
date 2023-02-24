@@ -159,7 +159,7 @@ body {
 }
 
 .b-img {
-  background-image: url(images/5.jpg);
+  background-image: url('	https://cdn.shopify.com/s/files/1/0054/0567/1479/files/newsletterbackground.png?v=1614316349');
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -186,7 +186,7 @@ body {
 }
 
 #hero1 {
-  background: url(images/shoose22.jpg);
+  background: url('https://cdn.shopify.com/s/files/1/0054/0567/1479/files/parallax.png?v=1614316345');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
