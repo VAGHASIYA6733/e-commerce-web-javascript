@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- icone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="./s1.css">
+</head>
+
+<body>
+  <!--back to top-->
+  <button type="button" class="btn btn-black btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up" style="margin-left: -19px; margin-top: -10px;"></i>
+  </button>
+
+  <div class="container-fluid">
+
+    <div class="row bg-black linehight">
+      <div class="col  d-none col-sm-6 col-md-6 col-lg-4  d-md-inline-block d-sm-inline-block text-center p-2">
+        <i class="bi bi-facebook text-white m-2  hover "></i>
+        <i class="bi bi-instagram text-white m-2 hover "></i>
+        <i class="bi bi-tiktok text-white m-2  hover"></i>
+        <i class="bi bi-snapchat text-white m-2  hover"></i>
+      </div>
+      <div class="col col-lg-4 
+             d-none d-lg-inline d-xl-inline-block ">
+        <p class="h6 text-white d-flex justify-content-center m-2 ">Welcome To Our Aveda Fashion Store !</p>
+      </div>
+      <div class="col   
+             text-white d-flex justify-content-center">
+        <p class="h6 m-2 ">Wishlist</p>
+        <p class="h6 m-2 ">Contact</p>
+      </div>
+
+    </div>
+    <!-- navbar -->
+    <div class="row color1 position-sticky fixed-top shadow-sm">
+      <div class="col  d-lg-none d-xl-none d-flex justify-content-center align-items-center">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i id="cl" class="bi bi-list"></i>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Fashion
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Men</a>
+                  <a class="dropdown-item" href="#">Women</a>
+                  <a class="dropdown-item" href="#">Kids</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Category
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <a class="dropdown-item" href="#">Kids</a></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Included Pages
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Wishlist</a>
+                  <a class="dropdown-item" href="#">Blog</a>
+                  <a class="dropdown-item" href="#">404</a>
+                  <a class="dropdown-item" href="#">Colletion</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  About Us
+                </button>
+              </h2>
+
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  FAQs
+                </button>
+              </h2>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <a class="dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+          data-mdb-toggle="dropdown" aria-expanded="false">
+          <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 " trigger="hover"
+            style="width: 30;;height: 30;">
+          </lord-icon>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <div class="input-group">
+              <div class="form-outline w-auto">
+                <input type="search" id="form1" class="form-control-dropdown" placeholder="search">
+                <label class="form-label" for="form1"></label>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col  d-flex justify-content-center align-items-center">
+        <p class="h2 fw-bold text-dark">Aveda</p>
+        <p class="h2 text-muted">.</p>
+      </div>
+      <div
+        class="col d-none col-lg-6  d-lg-flex d-xl-flex d-md-none  d-flex justify-content-center align-items-center ">
+
+
+        <nav class="desktop-navigation-menu">
+
+          <div class="container bg-white">
+
+            <ul class="desktop-menu-category-list">
+
+              <li class="menu-category">
+                <a href="#" class="menu-title"></a>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Fashion</a>
+
+                <div class="dropdown-panel">
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Men</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">T-shirts & shirts</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">sports & active wear</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Blazers & coats</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Blazers & coats</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Coats & Jackets</a>
+                    </li>
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Women</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">T-shirts & shirt</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Coats & Jackets</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Sweatshirts</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Denim</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Dresses</a>
+                    </li>
+                    <li class="panel-list-item">
+                      <a href="#">Sarees</a>
+                    </li>
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Kids</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Bath Accessories</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Hanky Set</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Kids Toys</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Kids Wear</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Bath Toys
+                      </a>
+                    </li>
+                    <li class="panel-list-item">
+                      <a href="#">Denim
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/Aveda_1.jpg?v=1653636124">
+                      </a>
+                    </li>
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/aveda_2.jpg?v=1653636124">
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <li class="menu-category">
+                <a href="#" class="menu-title">Category</a>
+
+                <ul class="dropdown-list">
+                  <li class="menu-title">
+                    <a href="#"
+                      style="text-align: center; color: black; border-bottom: 1px solid rgba(54, 53, 53, 0.542);">Kids</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Bath Accessories</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Hanky Set</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Kids Toys</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Kids Wear</a>
+                  </li>
+                  <li class="panel-list-item">
+                    <a href="#">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/15_34ba8529-c027-4d40-9220-ffbbb058df5c_720x.png?v=1605251977">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-category">
+                <a href="#" class="menu-title">pages</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Wishlist</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Blog</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">404</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Collection</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">About</a>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">FAQ</a>
+              </li>
+
+              <div class="header-top-actions">
+
+                <select name="currency">
+
+                  <option value="usd">USD &dollar;</option>
+                  <option value="eur">EUR &euro;</option>
+
+                </select>
+
+
+              </div>
+            </ul>
+
+          </div>
+
+        </nav>
+
+
+
+      </div>
+      <div class="col  d-flex justify-content-center align-items-center">
+
+        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 d-none d-lg-flex" trigger="hover"
+          style="width: 30;;height: 30;">
+        </lord-icon>
+
+
+        <a href="" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+          <lord-icon src="https://cdn.lordicon.com/bhfjfgqz.json" class="m-2 mt-3" trigger="hover"
+            style="width: 30;;height: 30;">
+          </lord-icon>
+        </a>
+        <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" class="m-2" trigger="hover" style="width:30;height:30">
+        </lord-icon>
+        <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none d-  "
+          style="width:30;height:30">
+        </lord-icon>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="h3 ">Login</p>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="row ps-lg-5 ps-md-4 ps-sm-3 ps-sm-2 ps-1  pe-lg-5 ps-md-4 pe-sm-3 pe-sm-2 pe- d-flex flex-column">
+              <div class="col">
+                <form action="">
+                  <input type="text" placeholder="E-mail" class="rounded-pill ps-2 m-2 p-1">
+                  <input type="text" placeholder="Password" class="rounded-pill ps-2 m-2 p-1">
+                </form>
+              </div>
+
+              <div class="col">
+                <p class="fs-6 text-muted float-end">Forgot your password?</p>
+              </div>
+              <div class="col">
+                <button class="sign-btn rounded-pill p-2">Sign Up</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- sliderrrrrrrrrr -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+      style="margin-left: -20px; margin-right: -20px; overflow: hidden;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider2_67a71704-1fbe-4ce4-99bc-3135d95a446f.png?v=1614320343"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block" id="c1">
+            <h5 class="slider-heading1">T-Shirt</h5>
+            <h2 class="slider-heading2">Man's <br><span style="color: black;">Fashion!</span></h2>
+            <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+            <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption2  d-md-block" id="c1">
+            <h5 class="slider-heading1">Spring</h5>
+            <h2 class="slider-heading2">Trandy <br><span style="color: black;">Fashion!</span></h2>
+            <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+            <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--girl image-->
+    <div class="row ">
+      <div class="girl-1 col-12 col-md-12  col-lg-4">
+        <div class="container">
+          <div class="box">
+            <div class="imgBox ">
+              <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/aboutusbanner.png?v=1614316340" alt="" class="img-fluid">
+            </div>
+            <div class="content border">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12  col-md-12 col-lg-6" style="margin: 15px;">
+        <p class="h6" id="about">ALL ABOUT US</p>
+        <p class="h1" id="summer"> Summer Fashion</p>
+        <p class="lorem" id="img-lorem" style="margin-top: 13px;">Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <p class="lorem" id="img-lorem">tempor
+          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+        <p class="lorem" id="img-lorem">ultrices
+          gravida. Risus commodo viverra maecenas accumsan lacus vel</p>
+        <p class="lorem" id="img-lorem">
+          facilisis.</p>
+        <p class="lorem" id="img-lorem">Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <p class="lorem" id="img-lorem">tempor
+          incididunt ut labore .</p>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+
+      <!--product card grid-->
+  <div class="product-main">
+
+    <h2 class="title text-center fs-2" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Trending Products</h2>
+
+    <div class="product-grid">
+
+      <div class="showcase">
+
+        <div class="showcase-banner">
+<a href="./shoping page.html">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d_533x.png?v=1605252646" alt="Mens Winter Leathers Jackets" width="300"
+            class="product-img default">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/4_b77ffde1-a4fe-4ec5-8cba-ae4ae9d1e503_720x.png?v=1605252646" alt="Mens Winter Leathers Jackets" width="300"
+            class="product-img hover">
+          </a>
+          <p class="showcase-badge">15%</p>
+
+          <div class="showcase-actions">
+
+            <button class="btn-action">
+              <i class="bi bi-eye"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-heart"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-cart4"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="showcase-content">
+
+          <a href="#" class="showcase-category">jacket</a>
+
+          <a href="#">
+            <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+          </a>
+
+          <div class="price-box">
+            <p class="price">$48.00</p>
+            <del>$75.00</del>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="showcase">
+<a href="./shoping page.html">
+        <div class="showcase-banner">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/17_68723c12-1e46-471d-9b43-21834d6931ad_940x.png?v=1605252566" alt="Pure Garment Dyed Cotton Shirt"
+            class="product-img default" width="300">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/18_9f8cd3d5-6a98-4ae0-ac12-25fd56bedfe1_940x.png?v=1605252568" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+            width="300">
+          </a>
+          <p class="showcase-badge angle black">sale</p>
+
+          <div class="showcase-actions">
+
+            <button class="btn-action">
+              <i class="bi bi-eye"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-heart"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-cart4"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="showcase-content">
+          <a href="#" class="showcase-category">shirt</a>
+
+          <h3>
+            <a href="#" class="showcase-title">Pure Garment Dyed Cotton Shirt</a>
+          </h3>
+
+          <div class="price-box">
+            <p class="price">$45.00</p>
+            <del>$56.00</del>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="showcase">
+<a href="./shoping page.html">
+        <div class="showcase-banner">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/1_7bd5787c-b77b-4f4c-a45e-d6f3c9e2f1d6.png?v=1605252315" alt="MEN Yarn Fleece Full-Zip Jacket"
+            class="product-img default" width="300">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/2_7e273de5-9356-489b-bf9e-600e1add4790_940x.png?v=1605252316" alt="MEN Yarn Fleece Full-Zip Jacket"
+            class="product-img hover" width="300">
+          </a>
+            <div class="showcase-actions">
+
+              <button class="btn-action">
+                <i class="bi bi-eye"></i>
+              </button>
+  
+              <button class="btn-action">
+                <i class="bi bi-heart"></i>
+              </button>
+  
+              <button class="btn-action">
+                <i class="bi bi-cart4"></i>
+              </button>
+  
+            </div>
+  
+           </div>
+
+        <div class="showcase-content">
+          <a href="#" class="showcase-category">Jacket</a>
+
+          <h3>
+            <a href="#" class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</a>
+          </h3>
+          <div class="price-box">
+            <p class="price">$58.00</p>
+            <del>$65.00</del>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="showcase">
+<a href="./shoping page.html">
+        <div class="showcase-banner">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/19_b0263b2f-3f9b-44dd-98cf-5d365fcfd5cb_940x.png?v=1605252228" alt="Black Floral Wrap Midi Skirt"
+            class="product-img default" width="300">
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/20_ff268ea8-ad79-4213-9a6d-9c47db23b50d_940x.png?v=1605252228" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+            width="300">
+          </a>
+          <p class="showcase-badge angle pink">new</p>
+
+          <div class="showcase-actions">
+
+            <button class="btn-action">
+              <i class="bi bi-eye"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-heart"></i>
+            </button>
+
+            <button class="btn-action">
+              <i class="bi bi-cart4"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="showcase-content">
+          <a href="#" class="showcase-category">skirt</a>
+
+          <h3>
+            <a href="#" class="showcase-title">Black Floral Wrap Midi Skirt</a>
+          </h3>
+
+          <div class="showcase-rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+
+          <div class="price-box">
+            <p class="price">$25.00</p>
+            <del>$35.00</del>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+    <!-- shoose image -->
+
+
+
+    <section id="hero1" class="hero">
+      <div class="inner d-flex justify-content-center align-items-center ">
+        <div class="copy ">
+          <div class="col p-5 shadow-sm rounded" style=" background-color: #f5f1ebaf;">
+
+            <p class="h3 colork fw-light">For The Best</p>
+            <p class="h1 text-dark fs-1">Discount Sale</p>
+            <p class="h5 colork text-muted fw-bold">The Big Offer Day Extra 10% Off</p>
+            <p class="h6 text-muted">Offer only 5 days!</p>
+            <div class="col ms-auto me-auto" style="width: 200px;">
+              <button class="sign-btn text-white rounded-pill p-2">VIEW COLLECTION</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--icon image-->
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img class=" lazyloaded d-inline img-fluid"
+              data-src="//cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon1.png?v=1614316311"
+              alt="service Image" src="//cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon1.png?v=1614316311">
+            <span> ORDERED BEFORE 16:00
+            </span>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Next bussiness day at home</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img class=" lazyloaded d-inline img-fluid"
+              data-src="//cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon1.png?v=1614316311"
+              alt="service Image"
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon2.png?v=1614316311//cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon1.png?v=1614316311">
+            <span> MONEY BACK
+            </span>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">14 Days to change your mind</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img class=" lazyloaded d-inline"
+              data-src="//cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon1.png?v=1614316311"
+              alt="service Image"
+              src="	https://cdn.shopify.com/s/files/1/0054/0567/1479/files/serviceicon3.png?v=1614316311">
+            <span>1000 PRODUCT ADD
+            </span>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Products add everyday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--sale card -->
+  <div class="row">
+    <div class="col-1 d-sm-none d-md-block"></div>
+    <div class="col-6 col-sm-12 col-md-4"><div class="card" style="width: 30rem;">
+      <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/banner1.png?v=1614316345" class="card-img-top" alt="...">
+      <div class="card-body">
+      </div>
+    </div></div>
+    <div class="col-2 d-sm-none d-md-block"></div>
+    <div class="col-6 col-sm-12 col-md-4"><div class="card" style="width: 30rem;">
+      <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/banner2.png?v=1614316345" class="card-img-top" alt="...">
+      <div class="card-body">
+      </div>
+    <div class="col-1 d-sm-none d-md-block"></div>
+  </div>
+  </div>
+   <!-- black image -->
+   <div class="row b-img p-4 pt-5 pb-5" >
+    <p class="h5 fst-italic fw-bold  d-flex justify-content-center text-white">CONNECT TO AVEDA & CO.</p>
+    <p class="h1 d-flex justify-content-center text-white">Join Our Newsletter</p>
+    <p class="h6 text-center text-white">Hey you, sign up it only takes a second to be the first to find out about our
+      latest news and <br> promotions…</p>
+    <div class="row bg-white  p-1 rounded-pill ms-auto me-auto " style="width: 600px;">
+      <div class="col d-flex align-items-center ">
+        <input type="text" name="" id="" class="input11  " placeholder="your email">
+      </div>
+      <div class="col p-0  ">
+        <button class="btn11 p-2 ps-4 pe-4 rounded-pill float-end">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+  <br>
+<!--footer-->
+<footer class="new_footer_area bg_color">
+  <div class="new_footer_top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#">Company</a></li>
+                          <li><a href="#">Android App</a></li>
+                          <li><a href="#">ios App</a></li>
+                          <li><a href="#">Desktop</a></li>
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">My tasks</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Term &amp; conditions</a></li>
+                          <li><a href="#">Reporting</a></li>
+                          <li><a href="#">Documentation</a></li>
+                          <li><a href="#">Support Policy</a></li>
+                          <li><a href="#">Privacy</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                      <div class="f_social_icon">
+                          <a href="#" class="fab fa-facebook"></a>
+                          <a href="#" class="fab fa-twitter"></a>
+                          <a href="#" class="fab fa-linkedin"></a>
+                          <a href="#" class="fab fa-pinterest"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+      </div>
+  </div>
+  <div class="footer_bottom">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 col-sm-7">
+                  <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+              </div>
+              <div class="col-lg-6 col-sm-5 text-right">
+                  <p>Made by <i class="icon_heart"></i><a href="http://cakecounter.com" target="_blank" style="font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Akshit Vaghasiya</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!--end-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- ------- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+  <!-- ------- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script>
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
